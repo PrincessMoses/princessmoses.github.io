@@ -117,7 +117,10 @@ a:active {
     position: fixed;
     top: 0;
     right: 0;
+    width: 20%;
     height: 100%;
-    width: auto;
+    background-image: url('images/Super Music.gif');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
     z-index: 1500;
 }
