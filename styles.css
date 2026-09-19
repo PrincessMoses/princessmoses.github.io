@@ -5,8 +5,18 @@
 
 html {
     background-image: url('images/Background.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: repeat-x repeat-y;
+    animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000px 0;
+    }
 }
 
 body {
@@ -124,3 +134,4 @@ a:active {
     background-size: 100% auto;
     z-index: 1500;
 }
+
